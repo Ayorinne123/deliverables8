@@ -5,24 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>airbnb</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/66b1033b7a.js" crossorigin="anonymous"></script>
+    <title>air bnb</title>
 </head>
 <body class="bg-zinc-900">
-    <nav class="flex justify-between h-12 ">
-        <!---->
-        <div class="flex">
+     <!--nav bar-->
+     <nav class=" relative container flex justify-between h-12 text-white py-12 mx-auto p-4">
+        <a href="#" class="text-4xl"><i class="fa-brands fa-airbnb"></i>Airbnb</a>
+        <ul class="flex item-center space-x-8">
+             <li>
+                 <a href="#">Places to stay</a>
+             </li>
+             <li>
+                 <a href="#">Experiences</a>
+             </li>
+             <li>
+                 <a href="#">Online Experiences</a>
+             </li>
+        </ul>
+        <ul class="flex item-center space-x-4">
+         <li>
+             <a href="#">Become a Host</a>
+         </li>
+         <li>
+            <a href="#" class="text-xl item-center space-x-4"><i class="fa-solid fa-globe spcace-x-4"></i></a>
+         </li>
+        </ul>
+        <ul>
+            <li>
+                <section class="h-14 w-20 bg-white rounded-full flex flex-nowarp pt-4">
+                    <div><i class="fa-solid fa-bars text-black px-4"></i></div>
+                    <div class="bg-pink-600 rounded-full h-8 w-8 text-center"><a href="#"><i class="fa-solid fa-user text-black"></i></a></div>
+                </section>
+            </li>
+        </ul>
 
+     </nav>
+     <br>
+     <!--input element-->
+     <section class=" relative container flex h-20 w-1/2 bg-white mx-auto rounded-full space-x-10 pt-3">
+        <div class="px-2 border-r-2 border-zinc-500">
+            <h6 class="font-bold">Location</h6>
+            <label class="block">
+                <input type="email" class="peer text-black" placeholder="Where are you going?"/>
+              </label>
         </div>
-    </nav>
-    <!--input element-->
-    <section class="h-20 w-6/12 bg-white mx-auto">
-
-    </section>
-
-    <!--call to action element-->
-    <div class="flex bg-red-500 h-96 w-11/12 mx-auto">
-
-    </div>
-
+        <div class="border-r-2 border-zinc-500">
+            <h6 class="font-bold ">Check in</h6>
+            <label class="block flex pt-0">
+                <input type="email" class="peer text-black" placeholder="Add dates?"/>
+              </label>
+        </div>
+        <div class="border-r-2 border-zinc-500">
+            <h6 class="font-bold">Check out</h6>
+            <label class="block flex pt-0">
+                <input type="email" class="peer text-black" placeholder="Add dates?"/>
+              </label>
+        </div>
+        <div class="">
+            <h6 class="font-bold">Guests</h6>
+            <label class="block flex pt-0">
+                <input type="email" class="peer text-black" placeholder="Add guests?"/>
+              </label>
+        </div>
+        <div class="flex items-center bg-pink-600 rounded-full h-10 w-10 text-center ">
+            <i class=" fa-solid fa-magnifying-glass text-center px-3 text-white"></i>
+        </div>
+        
+     </section>
+     <br>
+     <!--call to action element-->
+         <div class=" static container flex bg-red-500 h-96 w-11/30 mx-auto rounded-lg py-24">
+             <div class="flex-row mx-auto">
+                 <p class="text-white text-6xl text-center pt-10">
+                     Help 100,00 refugees fleeing Ukraine
+                 </p>      
+                 <br>
+                 <div class="flex-row px-12">
+                    <button class="px-15 border border-solid rounded-lg text-white absolute inset-x-200 bottom-82 h-7 w-1/4">
+                        learn more
+                    </button>
+                </div>      
+             </div>
+         </div>
 </body>
 </html>
